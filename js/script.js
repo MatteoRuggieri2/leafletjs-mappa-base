@@ -56,12 +56,25 @@ var popup = L.popup()
     .openOn(map);
 
 
-// Events
+// EVENTS
 
 // Get Lan e Lon from click - Alert
+// function onMapClick(e) {
+//     alert("You clicked the map at " + e.latlng);
+//     console.log(e);
+// }
+
+// map.on('click', onMapClick);
+
+
+// Get Lan e Lon from click - Popup
+// var popup = L.popup();
+
 function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
-    console.log(e);
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
 }
 
 map.on('click', onMapClick);
