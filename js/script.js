@@ -16,3 +16,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Basic Marker | .marker([lat, lon])
 var marker = L.marker([51.5, -0.09]).addTo(map);
+
+// Circle | .circle([lat, lon])
+var circle = L.circle([51.508, -0.11], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
