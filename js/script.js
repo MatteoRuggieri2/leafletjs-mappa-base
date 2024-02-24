@@ -48,3 +48,9 @@ circle.bindPopup("I am a circle.");
 
 // Popup for Polygon
 polygon.bindPopup("I am a polygon.");
+
+// Generic Popup
+var popup = L.popup()
+    .setLatLng([51.513, -0.09])
+    .setContent("I am a standalone popup.")
+    .openOn(map);
