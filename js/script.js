@@ -1,3 +1,5 @@
+// MAP
+
 // initialize the map on the "map" div with a given center and zoom
 // var map = L.map('map', {
 //     center: [51.505, -0.09],
@@ -13,6 +15,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+
+
+// MARKERS
 
 // Basic Marker | .marker([lat, lon])
 var marker = L.marker([51.5, -0.09]).addTo(map);
@@ -31,3 +36,9 @@ var polygon = L.polygon([
     [51.503, -0.06],
     [51.51, -0.047]
 ]).addTo(map);
+
+
+// POPUPS
+
+// Popup for Basic Marker
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
