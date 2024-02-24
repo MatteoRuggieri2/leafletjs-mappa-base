@@ -54,3 +54,14 @@ var popup = L.popup()
     .setLatLng([51.513, -0.09])
     .setContent("I am a standalone popup.")
     .openOn(map);
+
+
+// Events
+
+// Get Lan e Lon from click - Alert
+function onMapClick(e) {
+    alert("You clicked the map at " + e.latlng);
+    console.log(e);
+}
+
+map.on('click', onMapClick);
