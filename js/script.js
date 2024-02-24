@@ -45,3 +45,6 @@ marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
 // Popup for Circle
 circle.bindPopup("I am a circle.");
+
+// Popup for Polygon
+polygon.bindPopup("I am a polygon.");
