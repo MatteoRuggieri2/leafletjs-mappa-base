@@ -42,3 +42,6 @@ var polygon = L.polygon([
 
 // Popup for Basic Marker
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+// Popup for Circle
+circle.bindPopup("I am a circle.");
