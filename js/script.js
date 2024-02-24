@@ -54,3 +54,27 @@ var popup = L.popup()
     .setLatLng([51.513, -0.09])
     .setContent("I am a standalone popup.")
     .openOn(map);
+
+
+// EVENTS
+
+// Get Lan e Lon from click - Alert
+// function onMapClick(e) {
+//     alert("You clicked the map at " + e.latlng);
+//     console.log(e);
+// }
+
+// map.on('click', onMapClick);
+
+
+// Get Lan e Lon from click - Popup
+// var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
